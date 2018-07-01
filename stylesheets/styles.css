@@ -399,7 +399,7 @@ svg {
 .map {
   position: relative;
   margin-bottom: 50px;
-  height: 346px;
+  min-height: 346px;
   background-size: 100% 100%;
 }
 
