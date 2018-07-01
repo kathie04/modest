@@ -478,7 +478,6 @@ svg {
 .footer-icon:hover {
  	color: var(--global-link-hover-color) !important;
 }
-<<<<<<< HEAD
 
 @media screen and (min-width: 640px){
 .layout {
@@ -505,6 +504,3 @@ svg {
     width: 100%;
 	}
 }
-
-=======
->>>>>>> 8a72c5a0a61fea417c8f748bc7f6daac67155a93
