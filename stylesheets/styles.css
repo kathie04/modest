@@ -90,12 +90,18 @@ svg {
 	display: flex;
 }
 
-.grid-item {
-	margin-right: 30px;
+.grid .grid-item {
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
-.grid-item:last-child {
-	margin-right: 0;
+.grid .grid-item:first-child {
+	padding-left: 0;
+}
+
+
+.grid .grid-item:last-child {
+	padding-right: 0;
 }
 
 /*Header*/
@@ -381,18 +387,25 @@ svg {
 	margin-bottom: 70px;
 }
 
+
 .card-services {
 	text-align: center;
 }
 
 /*Section Features*/
-
-/*.grid-features {
+/*
+.grid-features {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 30px;
 }
 */
+
+.grid-features .grid-item {
+	width: 33.3%;
+	box-sizing: content-box;
+}
+
 .card-feature img {
 	margin-bottom: 50px;
 }
