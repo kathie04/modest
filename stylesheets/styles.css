@@ -86,6 +86,18 @@ svg {
 	color: var(--global-link-hover-color);
 }
 
+.grid {
+	display: flex;
+}
+
+.grid-item {
+	margin-right: 30px;
+}
+
+.grid-item:last-child {
+	margin-right: 0;
+}
+
 /*Header*/
 
 .header {
@@ -224,23 +236,6 @@ svg {
 
 /*Section Team*/
 
-.grid-team {
-	display: flex;
-}
-
-.grid-team .grid-item {
-	margin-right: 15px;
-	margin-left: 15px;
-}
-
-.grid-team .grid-item:first-child {
-	margin-left: 0;	
-}
-
-.grid-team .grid-item:last-child {
-	margin-right: 0;	
-}
-
 .card-team-content {
 	background-color: #e1e6ea;
 	padding-left: 15px;
@@ -311,12 +306,17 @@ svg {
 }
 
 .grid-gallery {
+	margin-bottom: 30px;
+}
+
+/*
+.grid-gallery {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 30px;
 	margin-bottom: 55px;
 }
-
+*/
 .card-gallery {
 	position: relative;
 }
@@ -357,17 +357,28 @@ svg {
 .grid-gallery-button {
 	display: flex;
 	justify-content: center;
+	margin-top: 55px;
 
 }
 
-/*Section Services*/
 
+
+/*Section Services*/
+/*
 .grid-services {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-column-gap: 30px;
 	grid-row-gap: 80px;
 	padding-top: 30px;
+}
+*/
+.services {
+	padding-bottom: 80px;
+}
+
+.grid-services {
+	margin-bottom: 70px;
 }
 
 .card-services {
@@ -376,12 +387,12 @@ svg {
 
 /*Section Features*/
 
-.grid-features {
+/*.grid-features {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 30px;
 }
-
+*/
 .card-feature img {
 	margin-bottom: 50px;
 }
