@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-google" viewBox="0 0 20 20">
@@ -67,9 +68,12 @@
 <path d="M2 12h6v18h-6v-18z"></path>
 <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<title>menu</title>
+<path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+</symbol>
 </defs>
 </svg>
-
 
   <header class="header" id="home">
     <div class="container">
@@ -78,6 +82,7 @@
           <a href="#index.html" class="logo"><img src="img/modest.png" alt="logo"></a>
         </div>
         <div class="layout-item">
+          <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
           <div class="navbar">
             <ul class="navbar-nav">
               <li class="is-active"><a href="#home" class="is-active">home</a></li>
@@ -100,16 +105,25 @@
     <div class="slider">
         <div class="slider-background" style="background-image: url(img/slider-bg.jpg)"></div>
         <div class="slider-overlay overlay"></div>
-        <div class="slider-foreground">
-          <div class="container">
+        <div class="container">
+          <div class="slider-foreground">
             <div class="slider-item">
               <div class="slider-content">
                 <h1>welcome to our marketplace</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor 
                 non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
+                <div class="slider-buttons">
                 <a class="button">view more</a>
                 <a class="button">video tour</a>
+                </div>
               </div>
+            </div>
+            <div class="slider-dots">
+              <ul>
+                <li class="slider-dot"></li>
+                <li class="slider-dot dot-is-active"></li>
+                <li class="slider-dot"></li>
+              </ul>
             </div>
           </div>
         </div>  
@@ -173,69 +187,69 @@
       <h2 class="heading">meet the team.</h2>
       <div class="grid grid-team">
         <div class="grid-item">
-          <div class="card-team">
-              <div class="card-team-photo">
+          <div class="card card-team">
+              <div class="card-photo">
                 <img src="img/team1.jpg" alt="photo">    
-                <div class="card-team-overlay overlay">
+                <div class="card-overlay overlay">
                 </div>
-                <ul class="card-team-social-icons">
+                <ul class="card-social-icons">
                     <li><a href="#"><svg class="icon icon-twitter icons team-icons"><use xlink:href="#icon-twitter"></use></svg></a></li>
                     <li><a href="#"><svg class="icon icon-facebook icons team-icons"><use xlink:href="#icon-facebook"></use></svg></a></li>
                     <li><a href="#"><svg class="icon icon-linkedin2 icons team-icons"><use xlink:href="#icon-linkedin2"></use></svg></a></li>
                 </ul>
               </div>
-              <div class="card-team-content">
+              <div class="card-content">
                 <h6>Gloria Bromley</h6>
                 <p>CEO and Founder</p>
               </div>
           </div>
         </div>
         <div class="grid-item">
-          <div class="card-team">
-          <div class="card-team-photo">
+          <div class="card card-team">
+          <div class="card-photo">
             <img src="img/team2.jpg" alt="photo">  
-            <div class="card-team-overlay overlay"></div>
-            <ul class="card-team-social-icons">
+            <div class="card-overlay overlay"></div>
+            <ul class="card-social-icons">
               <li><a href="#"><svg class="icon icon-twitter icons team-icons"><use xlink:href="#icon-twitter"></use></svg></a></li>
               <li><a href="#"><svg class="icon icon-facebook icons team-icons"><use xlink:href="#icon-facebook"></use></svg></a></li>
               <li><a href="#"><svg class="icon icon-linkedin2 icons team-icons"><use xlink:href="#icon-linkedin2"></use></svg></a></li>
             </ul>
           </div>
-          <div class="card-team-content">
+          <div class="card-content">
             <h6>Paul Torres</h6>
             <p>Head of Development</p>
           </div>
           </div>
         </div>
         <div class="grid-item">
-          <div class="card-team">
-          <div class="card-team-photo">
+          <div class="card card-team">
+          <div class="card-photo">
             <img src="img/team3.jpg" alt="photo">  
-            <div class="card-team-overlay overlay"></div>
-            <ul class="card-team-social-icons">
+            <div class="card-overlay overlay"></div>
+            <ul class="card-social-icons">
               <li><a href="#"><svg class="icon icon-twitter icons team-icons"><use xlink:href="#icon-twitter"></use></svg></a></li>
               <li><a href="#"><svg class="icon icon-facebook icons team-icons"><use xlink:href="#icon-facebook"></use></svg></a></li>
               <li><a href="#"><svg class="icon icon-linkedin2 icons team-icons"><use xlink:href="#icon-linkedin2"></use></svg></a></li>
             </ul>
           </div>
-          <div class="card-team-content">
+          <div class="card-content">
             <h6>Judith Gillette</h6>
             <p>Graphic Desinger</p>
           </div>
           </div>
         </div>
         <div class="grid-item">
-          <div class="card-team">
-          <div class="card-team-photo">
+          <div class="card card-team">
+          <div class="card-photo">
             <img src="img/team4.jpg" alt="photo">
-            <div class="card-team-overlay overlay"></div>
-            <ul class="card-team-social-icons">
+            <div class="card-overlay overlay"></div>
+            <ul class="card-social-icons">
               <li><a href="#"><svg class="icon icon-twitter icons team-icons"><use xlink:href="#icon-twitter"></use></svg></a></li>
               <li><a href="#"><svg class="icon icon-facebook icons team-icons"><use xlink:href="#icon-facebook"></use></svg></a></li>
               <li><a href="#"><svg class="icon icon-linkedin2 icons team-icons"><use xlink:href="#icon-linkedin2"></use></svg></a></li>
             </ul>     
           </div>   
-          <div class="card-team-content">
+          <div class="card-content">
             <h6>Delores Reed</h6>
             <p>Client Service Director</p>
           </div>
@@ -250,7 +264,7 @@
       <h2 class="heading">lovely work.</h2>
       <div class="grid grid-gallery">
       <div class="grid-item">
-        <div class="card-gallery"><a href="#"><img src="img/gallery1.jpg" alt="photo"></a>
+        <div class="card card-gallery"><a href="#"><img src="img/gallery1.jpg" alt="photo"></a>
         <div class="card-gallery-overlay overlay"></div>
         <div class="card-gallery-content inverse"><h4>partnership guidlines</h4></div>
         <div class="card-gallery-more">
@@ -259,7 +273,7 @@
       </div>
       </div>
       <div class="grid-item">
-        <div class="card-gallery"><a href="#"><img src="img/gallery2.jpg" alt="photo"></a>
+        <div class="card card-gallery"><a href="#"><img src="img/gallery2.jpg" alt="photo"></a>
         <div class="card-gallery-overlay overlay"></div>
         <div class="card-gallery-content inverse"><h4>partnership guidlines</h4></div>
         <div class="card-gallery-more">
@@ -268,7 +282,7 @@
         </div>
       </div>
       <div class="grid-item">
-        <div class="card-gallery"><a href="#"><img src="img/gallery3.jpg" alt="photo"></a>
+        <div class="card card-gallery"><a href="#"><img src="img/gallery3.jpg" alt="photo"></a>
         <div class="card-gallery-overlay overlay"></div>
         <div class="card-gallery-content inverse"><h4>partnership guidlines</h4></div>
         <div class="card-gallery-more">
@@ -279,7 +293,7 @@
     </div>
     <div class="grid grid-gallery">
       <div class="grid-item">
-        <div class="card-gallery"><a href="#"><img src="img/gallery4.jpg" alt="photo"></a>
+        <div class="card card-gallery"><a href="#"><img src="img/gallery4.jpg" alt="photo"></a>
         <div class="card-gallery-overlay overlay"></div>
         <div class="card-gallery-content inverse"><h4>partnership guidlines</h4></div>
         <div class="card-gallery-more">
@@ -288,7 +302,7 @@
         </div>
       </div>
       <div class="grid-item">
-        <div class="card-gallery"><a href="#"><img src="img/gallery5.jpg" alt="photo"></a>
+        <div class="card card-gallery"><a href="#"><img src="img/gallery5.jpg" alt="photo"></a>
         <div class="card-gallery-overlay overlay"></div>
         <div class="card-gallery-content inverse"><h4>partnership guidlines</h4></div>
         <div class="card-gallery-more">
@@ -297,7 +311,7 @@
         </div>
       </div>
       <div class="grid-item">
-        <div class="card-gallery"><a href="#"><img src="img/gallery6.jpg" alt="photo"></a>
+        <div class="card card-gallery"><a href="#"><img src="img/gallery6.jpg" alt="photo"></a>
         <div class="card-gallery-overlay overlay"></div>
         <div class="card-gallery-content inverse"><h4>partnership guidlines</h4></div>
         <div class="card-gallery-more">
@@ -383,21 +397,21 @@
         <h2 class="heading">FEATURES</h2>
         <div class="grid grid-features">
           <div class="grid-item">
-          <div class="card-feature"> 
+          <div class="card card-feature"> 
             <img src="img/feat1.jpg" alt="feature">
             <h4>Product Design: Eames Chairs</h4>
             <p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p>
           </div>
           </div>
           <div class="grid-item">
-          <div class="card-feature"> 
+          <div class="card card-feature"> 
             <img src="img/feat2.jpg" alt="feature">
             <h4>Elegant and Colorful Logos</h4>
             <p>I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it.</p>
           </div>
           </div>
           <div class="grid-item">
-          <div class="card-feature"> 
+          <div class="card card-feature"> 
             <img src="img/feat3.jpg" alt="feature">
             <h4>A Showcase of Creative</h4>
             <p>It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style.</p>
